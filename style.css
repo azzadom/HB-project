@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e3d2ea;
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#lyricsDisplay {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 16px 32px;
+  background-color: #8e44ad;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 20px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+#lyricsDisplay:hover {
+  background-color: #732d91;
+}
+
+#sparkle-text {
+  font-family: 'Chewy', cursive; 
+  font-size: 100px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff00cc5e, #dd33ff, #9900ff, #dd33ff, #ff00cc5e);
+  background-size: 400% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: sparkle 3s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes sparkle {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.image-container img {
+  max-width: 300px;
+  margin-bottom: 16px;
+}
+
+.gif-container img {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px #a66bbf;
+  margin-bottom: 16px;
+}
+
+
